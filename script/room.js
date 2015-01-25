@@ -157,6 +157,19 @@ var Room = {
 				};
 			}
 		},
+		'sawmill': {
+			name: _('sawmill'),
+			button: null,
+			maximum: 1,
+			availableMsg: _("builder says sawmill can be built to increase wood production"),
+			buildMsg: _("sawmill's done, wood production doubled."),
+			type: 'building',
+			cost: function() {
+				return {
+					'wood': 1
+				};
+			}
+		},
 		'torch': {
 			name: _('torch'),
 			button: null,
