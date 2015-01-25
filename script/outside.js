@@ -92,7 +92,7 @@ var Outside = {
 			}
 		},
 		'sawmill worker': {
-			name: _('sawmillworker'),
+			name: _('sawmill worker'),
 			delay: 10,
 			stores: {
 				'wood': 2
