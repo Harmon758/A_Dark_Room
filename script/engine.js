@@ -120,7 +120,7 @@
 				var optionsList = $('<ul>')
 					.appendTo(options);
 				$('<li>')
-					.text("language")
+					.text("language.")
 					.appendTo(optionsList);
 				
 				$.each(langs, function(name,display){
@@ -134,25 +134,25 @@
 
 			$('<span>')
 				.addClass('lightsOff menuBtn')
-				.text(_('lights off'))
+				.text(_('lights off.'))
 				.click(Engine.turnLightsOff)
 				.appendTo(menu);
 			
 			$('<span>')
 				.addClass('menuBtn')
-				.text(_('restart'))
+				.text(_('restart.'))
 				.click(Engine.confirmDelete)
 				.appendTo(menu);
 			
 			$('<span>')
 				.addClass('menuBtn')
-				.text(_('share'))
+				.text(_('share.'))
 				.click(Engine.share)
 				.appendTo(menu);
 
 			$('<span>')
 				.addClass('menuBtn')
-				.text(_('save'))
+				.text(_('save.'))
 				.click(Engine.exportImport)
 				.appendTo(menu);
 
@@ -168,19 +168,13 @@
 			
 			$('<span>')
 				.addClass('menuBtn')
-				.text(_('app store'))
+				.text(_('app store.'))
 				.click(function() { window.open('https://itunes.apple.com/us/app/a-dark-room/id736683061'); })
 				.appendTo(menu);
 
 			$('<span>')
 				.addClass('menuBtn')
-				.text(_('github'))
-				.click(function() { window.open('https://github.com/harmon758/A_Dark_Room'); })
-				.appendTo(menu);
-			
-			$('<span>')
-				.addClass('menuBtn')
-				.text(_('source'))
+				.text(_('github.'))
 				.click(function() { window.open('https://github.com/Continuities/adarkroom'); })
 				.appendTo(menu);
 			
