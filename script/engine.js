@@ -165,12 +165,6 @@
 					.click(Engine.Dropbox.startDropbox)
 					.appendTo(menu);
 			}
-			
-			$('<span>')
-				.addClass('menuBtn')
-				.text(_('app store'))
-				.click(function() { window.open('https://itunes.apple.com/us/app/a-dark-room/id736683061'); })
-				.appendTo(menu);
 
 			$('<span>')
 				.addClass('menuBtn')
