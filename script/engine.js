@@ -108,29 +108,6 @@
 			var menu = $('<div>')
 				.addClass('menu')
 				.appendTo('body');
-	
-			if(typeof langs != 'undefined'){
-				var customSelect = $('<span>')
-					.addClass('customSelect')
-					.addClass('menuBtn')
-					.appendTo(menu);
-				var options = $('<span>')
-					.addClass('customSelectOptions')
-					.appendTo(customSelect);
-				var optionsList = $('<ul>')
-					.appendTo(options);
-				$('<li>')
-					.text("language")
-					.appendTo(optionsList);
-				
-				$.each(langs, function(name,display){
-					$('<li>')
-						.text(display)
-						.attr('data-language', name)
-						.on("click", function() { Engine.switchLanguage(this); })
-						.appendTo(optionsList);
-				});
-			}
 
 			$('<span>')
 				.addClass('lightsOff menuBtn')
